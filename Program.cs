@@ -11,7 +11,6 @@ namespace Preparatifs
             Console.Write("Entrez une expression: ");
             string valeurEtree = Console.ReadLine();
             Expression expr = new Expression(valeurEtree);
-            var regex = new Regex("(\\+|-|\\*|/)");
             Console.WriteLine($"La valeur de l'expression est: {expr.doubleValue}");
         }
     }
